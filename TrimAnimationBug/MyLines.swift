@@ -22,7 +22,6 @@ struct MyLines: View {
             }
             .trim(from: 0, to: percentage) // << breaks path by parts, animatable
             .stroke(Color.black, style: StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round))
- 
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
                     withAnimation(.easeOut(duration: 2.0)) {
@@ -32,7 +31,7 @@ struct MyLines: View {
 
                // << activates animation for 0 to the end
             }.padding()
-
+            .navigationBarTitle("Correct animation time", displayMode: .inline)
         //}
     }
 }

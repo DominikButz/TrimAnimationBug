@@ -10,29 +10,65 @@ provides-member:
 - ["16TrimAnimationBug20ContentView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "$showOverlay"
+- !private "AnyTransition"
+- "Bool"
+- "BooleanLiteralType"
+- "Button"
+- "Color"
 - "ContentView"
 - "ContentView_Previews"
+- "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "MyLines"
+- "NavigationLink"
+- !private "NavigationView"
 - "PreviewProvider"
+- "State"
 - !private "StringLiteralType"
-- !private "Text"
+- "Text"
 - "View"
 depends-member:
 - ["7SwiftUI10AnimatableP", ""]
+- !private ["7SwiftUI13AnyTransitionV", "move"]
 - !private ["7SwiftUI7AnyViewV", "init"]
 - ["SK", ""]
+- !private ["SK", "systemBackground"]
+- !private ["Sb", "toggle"]
+- !private ["7SwiftUI6ButtonV", "init"]
+- !private ["So10CGColorRefa", "systemBackground"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "systemBackground"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "toggle"]
+- !private ["s7CVarArgP", "systemBackground"]
+- !private ["s7CVarArgP", "toggle"]
+- !private ["s12CaseIterableP", "trailing"]
 - ["Sl", ""]
+- !private ["Sl", "systemBackground"]
+- !private ["7SwiftUI5ColorV", "init"]
 - ["SL", ""]
+- !private ["SL", "systemBackground"]
+- ["16TrimAnimationBug11ContentViewV", "$showOverlay"]
+- !private ["16TrimAnimationBug11ContentViewV", "AnyTransition"]
 - ["16TrimAnimationBug11ContentViewV", "Body"]
+- ["16TrimAnimationBug11ContentViewV", "Bool"]
+- !private ["16TrimAnimationBug11ContentViewV", "Button"]
+- !private ["16TrimAnimationBug11ContentViewV", "Color"]
 - ["16TrimAnimationBug11ContentViewV", "Default_Body"]
+- !private ["16TrimAnimationBug11ContentViewV", "MyLines"]
+- !private ["16TrimAnimationBug11ContentViewV", "NavigationLink"]
+- !private ["16TrimAnimationBug11ContentViewV", "NavigationView"]
+- ["16TrimAnimationBug11ContentViewV", "State"]
 - !private ["16TrimAnimationBug11ContentViewV", "Text"]
 - ["16TrimAnimationBug11ContentViewV", "View"]
 - ["16TrimAnimationBug11ContentViewV", ""]
 - ["16TrimAnimationBug11ContentViewV", "_Default_Body"]
 - ["16TrimAnimationBug11ContentViewV", "_makeView"]
 - ["16TrimAnimationBug11ContentViewV", "_makeViewList"]
+- !private ["16TrimAnimationBug11ContentViewV", "_showOverlay"]
 - ["16TrimAnimationBug11ContentViewV", "_viewListCount"]
 - ["16TrimAnimationBug11ContentViewV", "body"]
 - ["16TrimAnimationBug11ContentViewV", "init"]
+- ["16TrimAnimationBug11ContentViewV", "showOverlay"]
 - !private ["16TrimAnimationBug20ContentView_PreviewsV", "ContentView"]
 - ["16TrimAnimationBug20ContentView_PreviewsV", "Default_Previews"]
 - ["16TrimAnimationBug20ContentView_PreviewsV", "Previews"]
@@ -44,19 +80,62 @@ depends-member:
 - ["16TrimAnimationBug20ContentView_PreviewsV", "init"]
 - ["16TrimAnimationBug20ContentView_PreviewsV", "platform"]
 - ["16TrimAnimationBug20ContentView_PreviewsV", "previews"]
+- !private ["s28CustomDebugStringConvertibleP", "systemBackground"]
+- !private ["s17CustomReflectableP", "systemBackground"]
+- !private ["s17CustomReflectableP", "toggle"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "systemBackground"]
+- !private ["s23CustomStringConvertibleP", "toggle"]
+- !private ["Se", "systemBackground"]
+- !private ["Se", "toggle"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
+- ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
+- !private ["7SwiftUI4EdgeO", "trailing"]
+- !private ["SE", "systemBackground"]
+- !private ["SE", "toggle"]
 - ["SQ", ""]
 - !private ["SQ", "init"]
-- !private ["SQ", "padding"]
+- !private ["SQ", "systemBackground"]
+- !private ["SQ", "toggle"]
+- !private ["SQ", "trailing"]
+- !private ["s27ExpressibleByBooleanLiteralP", "toggle"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "systemBackground"]
+- !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s32ExpressibleByStringInterpolationP", "systemBackground"]
 - !private ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
 - ["s26ExpressibleByStringLiteralP", ""]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "systemBackground"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "systemBackground"]
 - ["SH", ""]
+- !private ["SH", "init"]
+- !private ["SH", "systemBackground"]
+- !private ["SH", "toggle"]
+- !private ["SH", "trailing"]
 - ["s25LosslessStringConvertibleP", ""]
+- !private ["s25LosslessStringConvertibleP", "systemBackground"]
+- !private ["s25LosslessStringConvertibleP", "toggle"]
+- !private ["s10MirrorPathP", "systemBackground"]
+- !private ["16TrimAnimationBug7MyLinesV", ""]
+- !private ["16TrimAnimationBug7MyLinesV", "init"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "systemBackground"]
+- !private ["So9NSCopyingP", "systemBackground"]
+- !private ["So21NSItemProviderReadingP", "systemBackground"]
+- !private ["So21NSItemProviderWritingP", "systemBackground"]
+- !private ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "systemBackground"]
+- !private ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "systemBackground"]
+- !private ["So14NSSecureCodingP", "systemBackground"]
+- !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7SwiftUI14NavigationViewV", "init"]
+- !private ["7SwiftUI14NavigationViewV", "overlayView"]
 - !private ["7SwiftUI15PreviewProviderP", "ContentView"]
 - ["7SwiftUI15PreviewProviderP", "Default_Previews"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
@@ -66,13 +145,33 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["Sm", "systemBackground"]
+- !private ["SY", "trailing"]
 - ["ST", ""]
+- !private ["ST", "systemBackground"]
+- !private ["7SwiftUI10ShapeStyleP", "init"]
+- ["7SwiftUI5StateV", "init"]
+- ["7SwiftUI5StateV", "projectedValue"]
+- ["7SwiftUI5StateV", "subscript"]
+- ["7SwiftUI5StateV", "wrappedValue"]
+- !private ["SS", "systemBackground"]
+- !private ["Sy", "systemBackground"]
 - !private ["7SwiftUI4TextV", "init"]
-- !private ["7SwiftUI4TextV", "padding"]
 - ["s16TextOutputStreamP", ""]
+- !private ["s16TextOutputStreamP", "systemBackground"]
 - ["s20TextOutputStreamableP", ""]
+- !private ["s20TextOutputStreamableP", "systemBackground"]
+- !private ["So7UIColorC", "systemBackground"]
+- !private ["7SwiftUI4ViewP", "$showOverlay"]
+- !private ["7SwiftUI4ViewP", "AnyTransition"]
 - ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "Button"]
+- !private ["7SwiftUI4ViewP", "Color"]
 - ["7SwiftUI4ViewP", "Default_Body"]
+- !private ["7SwiftUI4ViewP", "MyLines"]
+- !private ["7SwiftUI4ViewP", "NavigationLink"]
+- !private ["7SwiftUI4ViewP", "NavigationView"]
+- ["7SwiftUI4ViewP", "State"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
@@ -81,15 +180,32 @@ depends-member:
 - ["7SwiftUI4ViewP", "_viewListCount"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "padding"]
+- !private ["7SwiftUI4ViewP", "overlayView"]
+- !private ["7SwiftUI4ViewP", "showOverlay"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildExpression"]
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
 - !private ["7SwiftUI11ViewBuilderV", "buildOptional"]
+- !private ["14CoreFoundation9_CFObjectP", "systemBackground"]
+- !private ["12CoreGraphics22_CGColorInitTrampolineP", "systemBackground"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "systemBackground"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "toggle"]
+- ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "toggle"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "systemBackground"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "systemBackground"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "systemBackground"]
+- !private ["s26_ExpressibleByColorLiteralP", "systemBackground"]
+- !private ["s19_HasContiguousBytesP", "systemBackground"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemBackground"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemBackground"]
+- !private ["s21_ObjectiveCBridgeableP", "systemBackground"]
+- !private ["s21_ObjectiveCBridgeableP", "toggle"]
 - !private ["7SwiftUI16_PreviewProviderP", "ContentView"]
 - ["7SwiftUI16_PreviewProviderP", "Default_Previews"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
@@ -101,31 +217,74 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
 - "7SwiftUI10AnimatableP"
+- !private "7SwiftUI13AnyTransitionV"
 - !private "7SwiftUI7AnyViewV"
 - "SK"
+- !private "Sb"
+- !private "7SwiftUI6ButtonV"
+- !private "So10CGColorRefa"
+- !private "8CloudKit21CKRecordValueProtocolP"
+- !private "s7CVarArgP"
+- !private "s12CaseIterableP"
 - "Sl"
+- !private "7SwiftUI5ColorV"
 - "SL"
 - "16TrimAnimationBug11ContentViewV"
 - "16TrimAnimationBug20ContentView_PreviewsV"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "Se"
+- "7SwiftUI15DynamicPropertyP"
+- !private "7SwiftUI4EdgeO"
+- !private "SE"
 - "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "16TrimAnimationBug7MyLinesV"
 - "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "7SwiftUI14NavigationLinkV"
+- !private "7SwiftUI14NavigationViewV"
 - "7SwiftUI15PreviewProviderP"
+- !private "Sm"
+- !private "SY"
 - "ST"
+- !private "7SwiftUI10ShapeStyleP"
+- "7SwiftUI5StateV"
+- !private "SS"
+- !private "Sy"
 - !private "7SwiftUI4TextV"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
+- !private "So7UIColorC"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
+- !private "14CoreFoundation9_CFObjectP"
+- !private "12CoreGraphics22_CGColorInitTrampolineP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
@@ -169,4 +328,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ecc8595293358c50d0dee49c22683184"
+interface-hash: "2fca0941b8fae07c4fb92f71d8ebde93"

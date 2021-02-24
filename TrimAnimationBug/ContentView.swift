@@ -30,6 +30,8 @@ struct ContentView: View {
                         Text("Back")
                     })
                     Spacer()
+                    Text("Wrong animation time")
+                    Spacer()
                 }.padding(.top, 40).padding(.horizontal, 15)
                 
                 MyLines(height: 200, width: 250)
@@ -39,7 +41,7 @@ struct ContentView: View {
          
         }, background: {
             Color(.systemBackground)
-        }, show: $showOverlay, size: nil, transition: AnyTransition.move(edge: .trailing))
+        }, show: $showOverlay, size: nil, transition: AnyTransition.move(edge: .trailing).animation(.easeInOut(duration: 0.3)))
  
     }
 }

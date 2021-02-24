@@ -19,7 +19,7 @@ depends-top-level:
 - "Color"
 - "ContentView"
 - "ContentView_Previews"
-- "FloatLiteralType"
+- !private "FloatLiteralType"
 - "HStack"
 - !private "IntegerLiteralType"
 - "MyLines"
@@ -34,6 +34,9 @@ depends-top-level:
 - "View"
 depends-member:
 - ["7SwiftUI10AnimatableP", ""]
+- !private ["7SwiftUI9AnimationV", "callAsFunction"]
+- !private ["7SwiftUI9AnimationV", "easeInOut"]
+- !private ["7SwiftUI13AnyTransitionV", "animation"]
 - !private ["7SwiftUI13AnyTransitionV", "move"]
 - ["SK", ""]
 - !private ["SK", "systemBackground"]
@@ -86,21 +89,31 @@ depends-member:
 - ["16TrimAnimationBug20ContentView_PreviewsV", "init"]
 - ["16TrimAnimationBug20ContentView_PreviewsV", "platform"]
 - ["16TrimAnimationBug20ContentView_PreviewsV", "previews"]
+- !private ["s28CustomDebugStringConvertibleP", "callAsFunction"]
+- !private ["s28CustomDebugStringConvertibleP", "easeInOut"]
 - !private ["s28CustomDebugStringConvertibleP", "systemBackground"]
+- !private ["s17CustomReflectableP", "callAsFunction"]
+- !private ["s17CustomReflectableP", "easeInOut"]
 - !private ["s17CustomReflectableP", "systemBackground"]
 - !private ["s17CustomReflectableP", "toggle"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "callAsFunction"]
+- !private ["s23CustomStringConvertibleP", "easeInOut"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "systemBackground"]
 - !private ["s23CustomStringConvertibleP", "toggle"]
+- !private ["Se", "easeInOut"]
 - !private ["Se", "systemBackground"]
 - !private ["Se", "toggle"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
 - !private ["7SwiftUI4EdgeO", "trailing"]
+- !private ["SE", "easeInOut"]
 - !private ["SE", "systemBackground"]
 - !private ["SE", "toggle"]
 - ["SQ", ""]
+- !private ["SQ", "callAsFunction"]
+- !private ["SQ", "easeInOut"]
 - !private ["SQ", "horizontal"]
 - !private ["SQ", "init"]
 - !private ["SQ", "systemBackground"]
@@ -115,6 +128,7 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "systemBackground"]
 - !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "easeInOut"]
 - ["s32ExpressibleByStringInterpolationP", ""]
 - !private ["s32ExpressibleByStringInterpolationP", "systemBackground"]
 - !private ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
@@ -123,9 +137,11 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "systemBackground"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "systemBackground"]
+- !private ["7SwiftUI7GestureP", "easeInOut"]
 - !private ["7SwiftUI6HStackV", "init"]
 - !private ["7SwiftUI6HStackV", "padding"]
 - ["SH", ""]
+- !private ["SH", "easeInOut"]
 - !private ["SH", "init"]
 - !private ["SH", "systemBackground"]
 - !private ["SH", "toggle"]
@@ -151,6 +167,7 @@ depends-member:
 - !private ["7SwiftUI14NavigationViewV", "overlayView"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["s9OptionSetP", "top"]
+- !private ["Sq", "easeInOut"]
 - !private ["7SwiftUI15PreviewProviderP", "ContentView"]
 - ["7SwiftUI15PreviewProviderP", "Default_Previews"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
@@ -207,6 +224,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "_viewListCount"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "easeInOut"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "overlayView"]
 - !private ["7SwiftUI4ViewP", "padding"]
@@ -224,6 +242,7 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "toggle"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "systemBackground"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "systemBackground"]
@@ -233,6 +252,7 @@ depends-member:
 - !private ["s19_HasContiguousBytesP", "systemBackground"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "systemBackground"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemBackground"]
+- !private ["s21_ObjectiveCBridgeableP", "easeInOut"]
 - !private ["s21_ObjectiveCBridgeableP", "systemBackground"]
 - !private ["s21_ObjectiveCBridgeableP", "toggle"]
 - !private ["7SwiftUI16_PreviewProviderP", "ContentView"]
@@ -246,6 +266,7 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
 - "7SwiftUI10AnimatableP"
+- !private "7SwiftUI9AnimationV"
 - !private "7SwiftUI13AnyTransitionV"
 - "SK"
 - !private "Sb"
@@ -271,9 +292,11 @@ depends-nominal:
 - !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "7SwiftUI7GestureP"
 - !private "7SwiftUI6HStackV"
 - "SH"
 - "s25LosslessStringConvertibleP"
@@ -289,6 +312,7 @@ depends-nominal:
 - !private "7SwiftUI14NavigationLinkV"
 - !private "7SwiftUI14NavigationViewV"
 - !private "s9OptionSetP"
+- !private "Sq"
 - "7SwiftUI15PreviewProviderP"
 - !private "Sm"
 - !private "SY"
@@ -312,6 +336,7 @@ depends-nominal:
 - !private "s30_CustomPlaygroundQuickLookableP"
 - "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"

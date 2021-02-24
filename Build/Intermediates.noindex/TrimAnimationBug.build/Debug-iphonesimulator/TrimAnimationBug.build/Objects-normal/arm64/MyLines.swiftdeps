@@ -24,6 +24,7 @@ depends-top-level:
 - !private "Path"
 - "PreviewProvider"
 - "State"
+- !private "StringLiteralType"
 - !private "StrokeStyle"
 - "View"
 - "height"
@@ -107,6 +108,7 @@ depends-member:
 - !private ["SQ", "callAsFunction"]
 - !private ["SQ", "easeOut"]
 - !private ["SQ", "init"]
+- !private ["SQ", "inline"]
 - !private ["SQ", "main"]
 - !private ["SQ", "move"]
 - !private ["SQ", "now"]
@@ -125,7 +127,9 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "easeOut"]
 - !private ["s23ExpressibleByNilLiteralP", "trim"]
 - ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
 - ["s26ExpressibleByStringLiteralP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - ["SF", ""]
 - ["SF", "zero"]
@@ -135,6 +139,7 @@ depends-member:
 - !private ["SH", "asyncAfter"]
 - !private ["SH", "black"]
 - !private ["SH", "easeOut"]
+- !private ["SH", "inline"]
 - !private ["SH", "main"]
 - !private ["SH", "round"]
 - !private ["SH", "trim"]
@@ -244,6 +249,7 @@ depends-member:
 - !private ["7SwiftUI11StrokeStyleV", "init"]
 - ["s16TextOutputStreamP", ""]
 - ["s20TextOutputStreamableP", ""]
+- !private ["7SwiftUI17NavigationBarItemV16TitleDisplayModeO", "inline"]
 - ["7SwiftUI16VectorArithmeticP", "zero"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "CGPoint"]
@@ -265,6 +271,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "height"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "move"]
+- !private ["7SwiftUI4ViewP", "navigationBarTitle"]
 - !private ["7SwiftUI4ViewP", "onAppear"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "percentage"]
@@ -283,6 +290,7 @@ depends-member:
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - ["7SwiftUI18_FormatSpecifiableP", "zero"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "asyncAfter"]
@@ -358,6 +366,7 @@ depends-nominal:
 - !private "7SwiftUI11StrokeStyleV"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
+- !private "7SwiftUI17NavigationBarItemV16TitleDisplayModeO"
 - "7SwiftUI16VectorArithmeticP"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
@@ -367,6 +376,7 @@ depends-nominal:
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "7SwiftUI18_FormatSpecifiableP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"

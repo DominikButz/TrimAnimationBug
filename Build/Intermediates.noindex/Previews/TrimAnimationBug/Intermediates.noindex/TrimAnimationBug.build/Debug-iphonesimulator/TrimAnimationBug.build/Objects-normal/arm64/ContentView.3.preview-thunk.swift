@@ -4,7 +4,7 @@ import SwiftUI
 
 extension ContentView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
-        #sourceLocation(file: "/Users/Dominik/Documents/Programmieren/Xcode Projects/TrimAnimationBug/TrimAnimationBug/ContentView.swift", line: 48)
+        #sourceLocation(file: "/Users/Dominik/Documents/Programmieren/Xcode Projects/TrimAnimationBug/TrimAnimationBug/ContentView.swift", line: 49)
         AnyView(__designTimeSelection(ContentView(), "#3925.[2].[0].property.[0].[0]"))
     #sourceLocation()
     }
@@ -31,7 +31,8 @@ extension ContentView {
                         __designTimeSelection(Text(__designTimeString("#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[0].arg[1].value.[0].arg[0].value", fallback: "Back")), "#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[0].arg[1].value.[0]")
                     }), "#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[0]")
                     __designTimeSelection(Spacer(), "#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[0].arg[0].value.[1]")
-                }, "#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[0]")
+                }.padding(.top, __designTimeInteger("#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[0].modifier[0].arg[1].value", fallback: 40)).padding(.horizontal, __designTimeInteger("#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[0].modifier[1].arg[1].value", fallback: 15)), "#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[0]")
+                
                 __designTimeSelection(MyLines(height: __designTimeInteger("#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[1].arg[0].value", fallback: 200), width: __designTimeInteger("#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[1].arg[1].value", fallback: 250)), "#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[1]")
                  
                 __designTimeSelection(Spacer(), "#3925.[1].[1].property.[0].[0].modifier[0].arg[0].value.[0].arg[0].value.[2]")
@@ -39,7 +40,7 @@ extension ContentView {
          
         }, background: {
             __designTimeSelection(Color(.systemBackground), "#3925.[1].[1].property.[0].[0].modifier[0].arg[1].value.[0]")
-        }, show: __designTimeSelection($showOverlay, "#3925.[1].[1].property.[0].[0].modifier[0].arg[2].value"), size: nil, transition: __designTimeSelection(AnyTransition.move(edge: .trailing), "#3925.[1].[1].property.[0].[0].modifier[0].arg[4].value")), "#3925.[1].[1].property.[0].[0]"))
+        }, show: __designTimeSelection($showOverlay, "#3925.[1].[1].property.[0].[0].modifier[0].arg[2].value"), size: nil, transition: __designTimeSelection(AnyTransition.move(edge: .trailing).animation(.easeInOut(duration: __designTimeFloat("#3925.[1].[1].property.[0].[0].modifier[0].arg[4].value.modifier[0].arg[0].value.arg[0].value", fallback: __designTimeFloat("#3925.[1].[1].property.[0].[0].modifier[0].arg[4].value.arg[0].value.arg[0].value", fallback: 0.3)))), "#3925.[1].[1].property.[0].[0].modifier[0].arg[4].value")), "#3925.[1].[1].property.[0].[0]"))
  
     #sourceLocation()
     }
