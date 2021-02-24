@@ -13,6 +13,8 @@
 		B411CD4E25E629F3007ADDF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B411CD4D25E629F3007ADDF2 /* Preview Assets.xcassets */; };
 		B411CD5925E629F3007ADDF2 /* TrimAnimationBugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B411CD5825E629F3007ADDF2 /* TrimAnimationBugTests.swift */; };
 		B411CD6425E629F3007ADDF2 /* TrimAnimationBugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B411CD6325E629F3007ADDF2 /* TrimAnimationBugUITests.swift */; };
+		B411CD7525E62A0E007ADDF2 /* MyLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B411CD7425E62A0E007ADDF2 /* MyLines.swift */; };
+		B411CD7A25E62AE2007ADDF2 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B411CD7925E62AE2007ADDF2 /* OverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		B411CD5F25E629F3007ADDF2 /* TrimAnimationBugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrimAnimationBugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B411CD6325E629F3007ADDF2 /* TrimAnimationBugUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimAnimationBugUITests.swift; sourceTree = "<group>"; };
 		B411CD6525E629F3007ADDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B411CD7425E62A0E007ADDF2 /* MyLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLines.swift; sourceTree = "<group>"; };
+		B411CD7925E62AE2007ADDF2 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				B411CD4625E629F1007ADDF2 /* TrimAnimationBugApp.swift */,
 				B411CD4825E629F1007ADDF2 /* ContentView.swift */,
+				B411CD7925E62AE2007ADDF2 /* OverlayView.swift */,
+				B411CD7425E62A0E007ADDF2 /* MyLines.swift */,
 				B411CD4A25E629F3007ADDF2 /* Assets.xcassets */,
 				B411CD4F25E629F3007ADDF2 /* Info.plist */,
 				B411CD4C25E629F3007ADDF2 /* Preview Content */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B411CD4925E629F1007ADDF2 /* ContentView.swift in Sources */,
+				B411CD7A25E62AE2007ADDF2 /* OverlayView.swift in Sources */,
 				B411CD4725E629F1007ADDF2 /* TrimAnimationBugApp.swift in Sources */,
+				B411CD7525E62A0E007ADDF2 /* MyLines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

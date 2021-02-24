@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "61c809ee87d1d2dfa43bc3749b6c4c1d"
+build_time: [1614148278, 786416000]
+inputs:
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/TrimAnimationBug/TrimAnimationBug/ContentView.swift": [1614148209, 909746899]
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/TrimAnimationBug/TrimAnimationBug/TrimAnimationBugApp.swift": [1614148209, 907400628]
+  "/Users/Dominik/Documents/Programmieren/Xcode Projects/TrimAnimationBug/TrimAnimationBug/MyLines.swift": [1614148278, 751399541]

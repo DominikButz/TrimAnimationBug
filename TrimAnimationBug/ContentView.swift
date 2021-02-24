@@ -8,9 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var showOverlay: Bool = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                NavigationLink("My Lines (Nav Link)", destination: MyLines(height: 200, width: 250))
+                
+                Button(action: {
+                    self.showOverlay.toggle()
+                }, label: {
+                    Text("My Lines (overlay)")
+                })
+            }
+            
+        }.overlayView(content: {
+            VStack {
+                HStack{
+                    Button(action: { self.showOverlay = false}, label: {
+                        Text("Back")
+                    })
+                    Spacer()
+                }.padding(.top, 40).padding(.horizontal, 15)
+                
+                MyLines(height: 200, width: 250)
+                 
+                Spacer()
+            }
+         
+        }, background: {
+            Color(.systemBackground)
+        }, show: $showOverlay, size: nil, transition: AnyTransition.move(edge: .trailing))
+ 
     }
 }
 
