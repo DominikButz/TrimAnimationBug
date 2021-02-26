@@ -15,9 +15,11 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 NavigationLink("My Lines (Nav Link)", destination: MyLines(height: 200, width: 250))
-                
+                 
                 Button(action: {
-                    self.showOverlay.toggle()
+                    withAnimation(.spring()){
+                        self.showOverlay.toggle()
+                    }
                 }, label: {
                     Text("My Lines (overlay)")
                 })
@@ -26,11 +28,16 @@ struct ContentView: View {
         }.overlayView(content: {
             VStack {
                 HStack{
-                    Button(action: { self.showOverlay = false}, label: {
+                    Button(action: {
+                        withAnimation(.spring()){
+                            self.showOverlay = false
+                        }
+                        
+                    }, label: {
                         Text("Back")
                     })
                     Spacer()
-                    Text("Wrong animation time")
+                    Text("Title")
                     Spacer()
                 }.padding(.top, 40).padding(.horizontal, 15)
                 
@@ -41,7 +48,7 @@ struct ContentView: View {
          
         }, background: {
             Color(.systemBackground)
-        }, show: $showOverlay, size: nil, transition: AnyTransition.move(edge: .trailing).animation(.easeInOut(duration: 0.3)))
+        }, show: $showOverlay, size: nil, transition: AnyTransition.move(edge: .trailing))
  
     }
 }

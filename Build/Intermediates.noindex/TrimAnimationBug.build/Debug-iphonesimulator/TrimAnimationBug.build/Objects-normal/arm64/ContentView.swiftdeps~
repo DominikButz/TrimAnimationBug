@@ -32,11 +32,11 @@ depends-top-level:
 - "Text"
 - "VStack"
 - "View"
+- "withAnimation"
 depends-member:
 - ["7SwiftUI10AnimatableP", ""]
 - !private ["7SwiftUI9AnimationV", "callAsFunction"]
 - !private ["7SwiftUI9AnimationV", "easeInOut"]
-- !private ["7SwiftUI13AnyTransitionV", "animation"]
 - !private ["7SwiftUI13AnyTransitionV", "move"]
 - ["SK", ""]
 - !private ["SK", "systemBackground"]
@@ -78,6 +78,7 @@ depends-member:
 - ["16TrimAnimationBug11ContentViewV", "body"]
 - ["16TrimAnimationBug11ContentViewV", "init"]
 - ["16TrimAnimationBug11ContentViewV", "showOverlay"]
+- !private ["16TrimAnimationBug11ContentViewV", "withAnimation"]
 - !private ["16TrimAnimationBug20ContentView_PreviewsV", "ContentView"]
 - ["16TrimAnimationBug20ContentView_PreviewsV", "Default_Previews"]
 - ["16TrimAnimationBug20ContentView_PreviewsV", "Previews"]
@@ -229,6 +230,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "overlayView"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "showOverlay"]
+- !private ["7SwiftUI4ViewP", "withAnimation"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildExpression"]
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]

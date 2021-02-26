@@ -14,7 +14,6 @@ struct MyLines: View {
     @State private var percentage: CGFloat = .zero
     var body: some View {
 
-        // ZStack {         // as for me, looks better w/o stack which tighten path
             Path { path in
                 path.move(to: CGPoint(x: 0, y: height/2))
                 path.addLine(to: CGPoint(x: width/2, y: height))
@@ -29,10 +28,9 @@ struct MyLines: View {
                     }
                 })
 
-               // << activates animation for 0 to the end
             }.padding()
             .navigationBarTitle("Correct animation time", displayMode: .inline)
-        //}
+        
     }
 }
 

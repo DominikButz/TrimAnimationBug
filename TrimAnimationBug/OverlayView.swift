@@ -42,7 +42,7 @@ struct OverlayViewModifier<ContentView: View, Background: View> : ViewModifier {
     
     @Binding var  show: Bool
      var size: CGSize?
-    var transition: AnyTransition?
+    var transition: AnyTransition
     var settings: OverlayViewSettings
     var zIndex: Double
     var dismissOnBackgroundTap: Bool
@@ -51,7 +51,7 @@ struct OverlayViewModifier<ContentView: View, Background: View> : ViewModifier {
         ZStack(alignment: settings.alignment) {
             
             content
-                //.zIndex(0)
+                .zIndex(0)
                 .overlay(Color.black.opacity(self.show ? 0.3 : 0)
             .onTapGesture {
                 if self.dismissOnBackgroundTap {
@@ -61,16 +61,9 @@ struct OverlayViewModifier<ContentView: View, Background: View> : ViewModifier {
 
             if self.show {
                 OverlayView(content: self.content, background: self.background, show: self.$show, size: self.size, settings: settings)
-                   .zIndex(zIndex)
+                    .zIndex(zIndex)
                     .offset(settings.offset)
-                    .applyIf(self.transition != nil, apply: {
-                        $0.transition(transition!)
-                    })
-                    .animation(Animation.spring())  // required for RestTimerView scaling transition..
-                    .onAppear {
-                        
-                    }
-                   
+                    .transition(transition)
             }
             
         }.ignoresSafeArea()
@@ -78,7 +71,7 @@ struct OverlayViewModifier<ContentView: View, Background: View> : ViewModifier {
 }
 
 extension View {
-    func overlayView<ContentView: View, Background: View>(content: @escaping ()->ContentView, background: @escaping ()->Background, show: Binding<Bool>, size: CGSize?, transition: AnyTransition?, zIndex: Double = 1, settings: OverlayViewSettings = OverlayViewSettings(), dismissOnBackgroundTap: Bool = true)->some View {
+    func overlayView<ContentView: View, Background: View>(content: @escaping ()->ContentView, background: @escaping ()->Background, show: Binding<Bool>, size: CGSize?, transition: AnyTransition, zIndex: Double = 1, settings: OverlayViewSettings = OverlayViewSettings(), dismissOnBackgroundTap: Bool = true)->some View {
         self.modifier(OverlayViewModifier(content: content, background: background, show: show, size: size, transition: transition, settings: settings, zIndex: zIndex, dismissOnBackgroundTap: dismissOnBackgroundTap))
     }
 }

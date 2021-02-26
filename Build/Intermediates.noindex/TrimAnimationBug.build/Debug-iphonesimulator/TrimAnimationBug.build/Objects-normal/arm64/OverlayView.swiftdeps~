@@ -17,9 +17,7 @@ provides-member:
 - ["7SwiftUI4ViewP", "eraseToAnyView"]
 provides-dynamic-lookup:
 depends-top-level:
-- "!="
 - "Alignment"
-- "Animation"
 - "AnyTransition"
 - "AnyView"
 - "AssignmentPrecedence"
@@ -55,8 +53,6 @@ depends-member:
 - !private ["7SwiftUI10AnimatableP", "init"]
 - !private ["7SwiftUI10AnimatableP", "width"]
 - !private ["7SwiftUI10AnimatableP", "zero"]
-- !private ["7SwiftUI9AnimationV", "spring"]
-- !private ["7SwiftUI7AnyViewV", "animation"]
 - !private ["7SwiftUI7AnyViewV", "init"]
 - ["SK", ""]
 - ["7SwiftUI7BindingV", "init"]
@@ -77,13 +73,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "none"]
 - !private ["s28CustomDebugStringConvertibleP", "some"]
-- !private ["s28CustomDebugStringConvertibleP", "spring"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "none"]
 - !private ["s17CustomReflectableP", "some"]
-- !private ["s17CustomReflectableP", "spring"]
 - !private ["s17CustomReflectableP", "toggle"]
 - !private ["s17CustomReflectableP", "width"]
 - !private ["s17CustomReflectableP", "zero"]
@@ -91,7 +85,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "black"]
 - !private ["s23CustomStringConvertibleP", "onTapGesture"]
 - !private ["s23CustomStringConvertibleP", "opacity"]
-- !private ["s23CustomStringConvertibleP", "spring"]
 - !private ["s23CustomStringConvertibleP", "toggle"]
 - !private ["Se", "height"]
 - !private ["Se", "none"]
@@ -113,7 +106,6 @@ depends-member:
 - !private ["SQ", "onTapGesture"]
 - !private ["SQ", "opacity"]
 - !private ["SQ", "some"]
-- !private ["SQ", "spring"]
 - !private ["SQ", "toggle"]
 - !private ["SQ", "width"]
 - !private ["SQ", "zero"]
@@ -121,7 +113,6 @@ depends-member:
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
 - ["s27ExpressibleByIntegerLiteralP", "init"]
-- !private ["s23ExpressibleByNilLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "none"]
 - !private ["s23ExpressibleByNilLiteralP", "some"]
 - ["s32ExpressibleByStringInterpolationP", ""]
@@ -166,7 +157,6 @@ depends-member:
 - ["16TrimAnimationBug11OverlayViewV", "size"]
 - !private ["16TrimAnimationBug11OverlayViewV", "zIndex"]
 - ["16TrimAnimationBug19OverlayViewModifierV", "$show"]
-- !private ["16TrimAnimationBug19OverlayViewModifierV", "Animation"]
 - ["16TrimAnimationBug19OverlayViewModifierV", "AnyTransition"]
 - ["16TrimAnimationBug19OverlayViewModifierV", "Binding"]
 - ["16TrimAnimationBug19OverlayViewModifierV", "Body"]
@@ -230,7 +220,6 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - !private ["7SwiftUI4ViewP", "_show"]
 - ["7SwiftUI4ViewP", "_viewListCount"]
-- !private ["7SwiftUI4ViewP", "animation"]
 - ["7SwiftUI4ViewP", "applyIf"]
 - !private ["7SwiftUI4ViewP", "background"]
 - !private ["7SwiftUI4ViewP", "black"]
@@ -244,7 +233,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "modifier"]
 - !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "offset"]
-- !private ["7SwiftUI4ViewP", "onAppear"]
 - !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "opacity"]
 - !private ["7SwiftUI4ViewP", "overlay"]
@@ -262,7 +250,6 @@ depends-member:
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
 - !private ["7SwiftUI11ViewBuilderV", "buildOptional"]
 - !private ["7SwiftUI12ViewModifierP", "$show"]
-- !private ["7SwiftUI12ViewModifierP", "Animation"]
 - ["7SwiftUI12ViewModifierP", "Binding"]
 - ["7SwiftUI12ViewModifierP", "Body"]
 - !private ["7SwiftUI12ViewModifierP", "Color"]
@@ -303,11 +290,10 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "toggle"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
-- !private ["7SwiftUI21_ViewModifier_ContentV", "overlay"]
+- !private ["7SwiftUI21_ViewModifier_ContentV", "zIndex"]
 depends-nominal:
 - !private "7SwiftUI9AlignmentV"
 - "7SwiftUI10AnimatableP"
-- !private "7SwiftUI9AnimationV"
 - !private "7SwiftUI7AnyViewV"
 - "SK"
 - "7SwiftUI7BindingV"
